@@ -1,3 +1,0 @@
-Baseline: R^2 score: 0.000
-SGDR: R^2 score: 0.058
-DecisionTree: R^2 score: 1.000
