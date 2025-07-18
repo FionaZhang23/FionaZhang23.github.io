@@ -1,0 +1,8 @@
+
+Output Report
+-------------
+Dummy Detector AUC: 0.5
+Baseline Detector AUC: 0.6')
+IsolationForest Detector AUC: 0.72')
+One-Class SVM Detector AUC(Embeddings): 0.84
+Pipeline saved at: /deac/csc/classes/csc373/zhanx223/assignment_3/output/final_pipeline.pkl

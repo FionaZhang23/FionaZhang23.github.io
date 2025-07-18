@@ -1,0 +1,29 @@
+=== Recommendation Model Evaluation Results ===
+
+Model: DummyRegressor-RawHours
+Target: hours
+MSE: 131814.3493
+Overpredictions: 16898
+Underpredictions: 3201
+Total predictions: 20099
+
+==================================================
+
+Model: ALS-RawHours
+Target: hours
+MSE: 115030.4962
+Overpredictions: 921
+Underpredictions: 1798
+Total predictions: 2719
+
+==================================================
+
+Model: ALS-Discretized
+Target: hours_bin
+MSE: 3.6557
+Overpredictions: 546
+Underpredictions: 2173
+Total predictions: 2719
+
+==================================================
+
