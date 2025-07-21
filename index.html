@@ -18,13 +18,13 @@
       text-align: center;
     }
     section {
-      max-width: 900px;
+      max-width: 960px;
       margin: 40px auto;
       padding: 0 20px;
     }
     .intro {
       background-color: white;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
       padding: 25px;
       border-radius: 10px;
       box-shadow: 0 3px 6px rgba(0,0,0,0.1);
@@ -36,8 +36,8 @@
       flex: 1;
     }
     .intro img {
-      width: 180px;
-      height: 180px;
+      width: 160px;
+      height: 160px;
       object-fit: cover;
       border-radius: 50%;
       border: 3px solid #007acc;
@@ -45,24 +45,24 @@
     .project {
       background-color: white;
       margin-bottom: 30px;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    h1, h2, h3 {
+    .project h3 {
       margin-top: 0;
     }
-    .project a {
+    a {
       color: #007acc;
       text-decoration: none;
     }
-    .project a:hover {
+    a:hover {
       text-decoration: underline;
     }
     footer {
       text-align: center;
       padding: 30px;
-      color: #888;
+      color: #777;
       font-size: 14px;
     }
   </style>
@@ -71,35 +71,45 @@
 
 <header>
   <h1>Fiona Zhang</h1>
-  <p>Data Science Enthusiast | Explorer</p>
+  <p>Data Science Enthusiast | Wake Forest University</p>
 </header>
 
 <section class="intro">
-  <img src="images/fiona.jpg" alt="Fiona Zhang Profile Photo" />
+  <img src="images/fiona.jpg" alt="Fiona Zhang Photo" />
   <div class="intro-text">
     <h2>Hello 👋</h2>
-    <p>
-      I'm Fiona Zhang, currently pursuing a dual Bachelor of Science in Mathematics and Computer Science at Wake Forest University. 
-      My journey in data science began with a curiosity about how the world works through numbers, patterns, and intelligent systems.
-    </p>
-    <p>
-      I'm passionate about building real-world solutions using data—whether it's designing recommender systems or analyzing behavioral patterns. 
-      My goal is to grow into a professional data scientist who not only understands the algorithms but also sees the human story behind the data.
-    </p>
-    <p>
-      Beyond analytics, I’m a huge fan of skiing 🏔️. Whether on a snowy mountain or at my desk debugging Python scripts, I thrive in challenging environments that push me to keep learning.
-    </p>
+    <p>I'm Fiona Zhang, a student at Wake Forest University majoring in Mathematics and Computer Science. My passion lies in transforming complex data into actionable insights and building intelligent systems to solve real-world problems.</p>
+    <p>I’ve applied machine learning to various domains including health data, imaging, text analysis, and recommendation systems. I aim to grow into a professional data scientist who blends statistical rigor with human-centered thinking. Outside of work, I love skiing and exploring the mountains ⛷️.</p>
   </div>
 </section>
 
 <section>
-  <h2>Projects</h2>
+  <h2>💻 Projects</h2>
 
+  <div class="project">
+    <h3><a href="https://github.com/FionaZhang23/robust-estimation-pipeline" target="_blank">📊 Assignment 2 – Robust Estimation & Recommendation System</a></h3>
+    <p>Built an end-to-end CRISP-DM pipeline for housing price prediction and fantasy book recommendation. Included automated data quality checks, leakage removal, and model tuning using scikit-learn.</p>
+  </div>
+
+  <div class="project">
+    <h3><a href="https://github.com/FionaZhang23/roadsurv-anomaly-detection" target="_blank">🛣️ Assignment 3 – Anomaly Detection in Road Surveillance</a></h3>
+    <p>Trained models to detect non-dog images in road scenes using naive scoring, RGB feature baselines, and Isolation Forests. Designed a reproducible pipeline to evaluate models via AUC score.</p>
+  </div>
+
+  <div class="project">
+    <h3><a href="https://github.com/FionaZhang23/lung-image-segmentation" target="_blank">🫁 Assignment 4 – Lung Image Segmentation (Option 2)</a></h3>
+    <p>Developed a pixel-wise segmentation model to classify suspicious regions in lung radiology scans. Output includes one-hot encoded label predictions and visualized results. Data is private due to medical confidentiality.</p>
+  </div>
+
+  <div class="project">
+    <h3><a href="https://github.com/FionaZhang23/assignment1-clinic" target="_blank">🏥 Assignment 1 – Clinic Management System (Web App)</a></h3>
+    <p>Created a Django-based web application to manage doctors, patients, and appointments. Implemented CRUD operations and used the Django admin interface for database visualization.</p>
+  </div>
 
 </section>
 
 <footer>
-  &copy; 2025 Fiona Zhang. Built with ❤️ and curiosity.
+  &copy; 2025 Fiona Zhang. Built with ❤️ and Python.
 </footer>
 
 </body>
