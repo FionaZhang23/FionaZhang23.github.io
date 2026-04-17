@@ -5,60 +5,183 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Fiona Zhang – Portfolio</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: Arial, sans-serif;
-      background: #f9f9f9;
+      background: #f7f9fc;
       margin: 0;
       padding: 0;
-      color: #333;
+      color: #2d3748;
+      line-height: 1.6;
     }
+
     header {
-      background-color: #2c3e50;
+      background: linear-gradient(135deg, #1f2d3d, #2c3e50);
       color: white;
-      padding: 40px 20px;
+      padding: 56px 20px;
       text-align: center;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 0.5px;
+    }
+
+    header p {
+      margin-top: 12px;
+      font-size: 1.05rem;
+      color: #dbe7f3;
+    }
+
     .intro {
       display: flex;
-      max-width: 1000px;
-      margin: 40px auto;
+      max-width: 1050px;
+      margin: 48px auto 24px;
       padding: 0 20px;
-      gap: 30px;
+      gap: 32px;
       align-items: center;
     }
+
     .intro img {
       width: 180px;
       height: 180px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid #007acc;
+      border: 4px solid #2b6cb0;
+      background: white;
+      flex-shrink: 0;
     }
+
     .intro-text {
       flex: 1;
     }
+
+    .intro-text h2 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      color: #1f2d3d;
+    }
+
     .projects {
-      max-width: 1000px;
-      margin: 20px auto;
+      max-width: 1050px;
+      margin: 10px auto 50px;
       padding: 0 20px;
     }
+
+    .projects h2 {
+      margin-bottom: 20px;
+      color: #1f2d3d;
+    }
+
     .project {
       background-color: white;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 22px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      border-left: 6px solid #2b6cb0;
     }
+
+    .project.featured {
+      border-left: 6px solid #1a73e8;
+      background: linear-gradient(to right, #ffffff, #f8fbff);
+    }
+
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
     .project h3 {
-      margin: 0 0 10px;
+      margin: 0;
+      font-size: 1.2rem;
+      color: #1f2d3d;
     }
+
     .project a {
       text-decoration: none;
-      color: #007acc;
+      color: #1a73e8;
+      font-weight: 600;
     }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e8f1fb;
+      color: #245b94;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .project p {
+      margin: 0 0 12px 0;
+    }
+
+    .tech-stack {
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: #4a5568;
+    }
+
+    .project-links {
+      margin-top: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .button-link {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 8px;
+      background: #edf2f7;
+      color: #1f2d3d;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.2s ease;
+    }
+
+    .button-link:hover {
+      background: #dbe7f3;
+      text-decoration: none;
+    }
+
     footer {
       text-align: center;
-      padding: 20px;
-      color: #888;
+      padding: 28px 20px;
+      color: #718096;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      .intro {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .intro img {
+        width: 150px;
+        height: 150px;
+      }
+
+      .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
   </style>
 </head>
@@ -66,74 +189,143 @@
 
 <header>
   <h1>Fiona Zhang</h1>
-  <p>Data Science Enthusiast | Wake Forest University</p>
+  <p>Mathematics & Computer Science Student | Machine Learning, Data Science, and Applied AI</p>
 </header>
 
 <section class="intro">
   <img src="images/fiona.jpg" alt="Fiona Zhang Profile Photo" />
   <div class="intro-text">
-    <h2>Hello 👋</h2>
+    <h2>Hello</h2>
     <p>
-      I'm Fiona Zhang, currently pursuing a dual Bachelor of Science in Mathematics and Computer Science at Wake Forest University. 
-      My journey in data science began with a curiosity about how the world works through numbers, patterns, and intelligent systems.
+      I'm Fiona Zhang, currently pursuing a dual Bachelor of Science in Mathematics and Computer Science at Wake Forest University.
+      My academic interests center on machine learning, data science, and building practical systems that connect rigorous analysis with real-world impact.
     </p>
     <p>
-      I'm passionate about building real-world solutions using data—whether it's designing recommender systems or analyzing behavioral patterns. 
-      My goal is to grow into a professional data scientist who not only understands the algorithms but also sees the human story behind the data.
+      I enjoy working on projects that combine technical depth with clear application value—from recommendation systems and anomaly detection
+      to medical imaging and predictive modeling. I’m especially interested in using data-driven methods to solve problems in healthcare, finance, and human-centered decision making.
     </p>
     <p>
-      Beyond analytics, I’m a huge fan of skiing 🏔️. Whether on a snowy mountain or at my desk debugging Python scripts, I thrive in challenging environments that push me to keep learning.
+      Beyond technical work, I value curiosity, persistence, and thoughtful design. I aim to build models that are not only accurate, but also meaningful, interpretable, and professionally presented.
     </p>
   </div>
 </section>
 
 <section class="projects">
-  <h2>📁 Projects</h2>
+  <h2>Selected Projects</h2>
 
-  <div class="project">
-    <h3><a href="https://github.com/FionaZhang23/Robust-Estimation-and-Recommendation-System-with-Data-Quality-Automation.git" target="_blank">
-      📊 Robust Estimation and Recommendation System
-    </a></h3>
+  <div class="project featured">
+    <div class="project-header">
+      <h3>
+        <a href="https://github.com/FionaZhang23/SkinVisionML" target="_blank">
+          SkinVisionML — Skin Cancer Detection with Class-Balanced Deep Learning
+        </a>
+      </h3>
+      <span class="tag">Featured Project</span>
+    </div>
     <p>
-      A full CRISP-DM pipeline that automates data quality checks, leakage detection, housing price prediction, and fantasy book recommendation.
-      Built using scikit-learn pipelines and HPC training support.
+      Developed a dermoscopic skin lesion classification pipeline for the HAM10000 dataset, addressing extreme class imbalance in multiclass medical image classification.
+      The final system combines a ResNet-18 backbone with class-balanced cross-entropy loss, ImageNet transfer learning, and a two-stage fine-tuning strategy to improve minority-class recognition.
     </p>
+    <p>
+      The final model achieved strong overall performance while substantially improving underrepresented lesion categories such as basal cell carcinoma (BCC),
+      actinic keratoses (AKIEC), and dermatofibroma (DF), making the project especially relevant for real-world medical AI settings.
+    </p>
+    <div class="tech-stack">
+      <strong>Tech:</strong> Python, PyTorch, ResNet-18, Transfer Learning, Medical Imaging, Deep Learning, Classification
+    </div>
+    <div class="project-links">
+      <a class="button-link" href="https://github.com/FionaZhang23/SkinVisionML" target="_blank">View Repository</a>
+    </div>
   </div>
 
   <div class="project">
-    <h3><a href="https://github.com/FionaZhang23/roadsurv-anomaly-detection" target="_blank">
-      🚧 Road Surveillance Anomaly Detection
-    </a></h3>
+    <div class="project-header">
+      <h3>
+        <a href="https://github.com/FionaZhang23/Robust-Estimation-and-Recommendation-System-with-Data-Quality-Automation.git" target="_blank">
+          Robust Estimation and Recommendation System
+        </a>
+      </h3>
+      <span class="tag">Machine Learning</span>
+    </div>
     <p>
-      Detects non-dog anomalies in street surveillance images using RGB features, Isolation Forests, and deep image embeddings. 
-      Evaluation based on AUC score for optimal separability.
+      Built a full CRISP-DM pipeline that automates data quality checks, leakage detection, housing price prediction, and fantasy book recommendation.
+      The system integrates structured preprocessing, feature engineering, and predictive modeling into one reproducible workflow.
     </p>
+    <div class="tech-stack">
+      <strong>Tech:</strong> Python, scikit-learn, Data Quality Automation, Recommendation Systems, Predictive Modeling
+    </div>
+    <div class="project-links">
+      <a class="button-link" href="https://github.com/FionaZhang23/Robust-Estimation-and-Recommendation-System-with-Data-Quality-Automation.git" target="_blank">View Repository</a>
+    </div>
   </div>
 
   <div class="project">
-    <h3><a href="https://github.com/FionaZhang23/lung-image-segmentation" target="_blank">
-      🫁 Lung Image Segmentation for Medical Screening
-    </a></h3>
+    <div class="project-header">
+      <h3>
+        <a href="https://github.com/FionaZhang23/roadsurv-anomaly-detection" target="_blank">
+          Road Surveillance Anomaly Detection
+        </a>
+      </h3>
+      <span class="tag">Computer Vision</span>
+    </div>
     <p>
-      Pixel-wise segmentation of suspicious lung regions using radiological scans. Multi-class classifier trained on one-hot encoded image masks.
-      Final predictions are output as `.npy` masks for radiologist evaluation.
+      Designed an anomaly detection workflow for street surveillance images using RGB features, Isolation Forests, and deep image embeddings.
+      The project focused on identifying unusual non-dog objects and evaluating separability through AUC-based performance metrics.
     </p>
+    <div class="tech-stack">
+      <strong>Tech:</strong> Python, Computer Vision, Isolation Forest, Deep Embeddings, AUC Evaluation
+    </div>
+    <div class="project-links">
+      <a class="button-link" href="https://github.com/FionaZhang23/roadsurv-anomaly-detection" target="_blank">View Repository</a>
+    </div>
   </div>
 
   <div class="project">
-    <h3><a href="https://github.com/juliajiang218/DM-assignment6" target="_blank">
-      💳 Deep Anomaly Detection for Credit Card Fraud
-    </a></h3>
+    <div class="project-header">
+      <h3>
+        <a href="https://github.com/FionaZhang23/lung-image-segmentation" target="_blank">
+          Lung Image Segmentation for Medical Screening
+        </a>
+      </h3>
+      <span class="tag">Medical Imaging</span>
+    </div>
     <p>
-      Collaborative project with Julia Jiang investigating anomaly detection for fraud detection using DevNet and IsolationForest.
-      Evaluation based on AUC-ROC and AUC-PR, with synthetic stress-testing via SMOTE to assess generalizability.
+      Built a pixel-wise medical image segmentation pipeline for identifying suspicious lung regions in radiological scans.
+      The model was trained on one-hot encoded mask labels and produced structured prediction outputs for downstream clinical review.
     </p>
+    <div class="tech-stack">
+      <strong>Tech:</strong> Python, Image Segmentation, Medical Imaging, Multi-Class Modeling
+    </div>
+    <div class="project-links">
+      <a class="button-link" href="https://github.com/FionaZhang23/lung-image-segmentation" target="_blank">View Repository</a>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-header">
+      <h3>
+        <a href="https://github.com/juliajiang218/DM-assignment6" target="_blank">
+          Deep Anomaly Detection for Credit Card Fraud
+        </a>
+      </h3>
+      <span class="tag">Collaborative Project</span>
+    </div>
+    <p>
+      Collaborated on a fraud detection study using DevNet and Isolation Forest to detect anomalous credit card transactions.
+      The project emphasized robust evaluation through AUC-ROC, AUC-PR, and synthetic stress testing with SMOTE.
+    </p>
+    <div class="tech-stack">
+      <strong>Tech:</strong> Python, Fraud Detection, DevNet, Isolation Forest, SMOTE, Imbalanced Learning
+    </div>
+    <div class="project-links">
+      <a class="button-link" href="https://github.com/juliajiang218/DM-assignment6" target="_blank">View Repository</a>
+    </div>
   </div>
 
 </section>
 
 <footer>
-  &copy; 2025 Fiona Zhang | Built with ❤️ and curiosity
+  &copy; 2025 Fiona Zhang | Built with clarity, curiosity, and care
 </footer>
 
 </body>
